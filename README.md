@@ -401,42 +401,6 @@ Input
 
 
 
-
-  Specifies  which code file acts as the controller for this endpoint.
-- get:
-
-  Specifies the method being requested (GET, PUT, POST, etc.).
-- operationId: hello
-  
-  Specifies the direct method to invoke for this endpoint within the controller/router 
-- parameters:
-  
-   This section defines the parameters of your endpoint. They can be defined as path, query, header, formData, or body.
-- definitions:
-   
-   This section defines the structure of objects used in responses or as parameters.
-
-# Common Issues
-
-## IF server fails
-Restart it. :)
-
-
-
-  Specifies  which code file acts as the controller for this endpoint.
-- get:
-
-  Specifies the method being requested (GET, PUT, POST, etc.).
-- operationId: hello
-  
-  Specifies the direct method to invoke for this endpoint within the controller/router 
-- parameters:
-  
-   This section defines the parameters of your endpoint. They can be defined as path, query, header, formData, or body.
-- definitions:
-   
-   This section defines the structure of objects used in responses or as parameters.
-
 # Common Issues
 
 ## IF server fails
