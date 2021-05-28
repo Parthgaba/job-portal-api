@@ -94,17 +94,19 @@ Npm scripts basically allow us to call (and chain) terminal commands via npm.
     - See posted Jobs
     
 3. Candidate side:
-    a. Signup
-    b. Login/Logout
-    c. List all applied jobs and their status.
-    d. Apply to one or more jobs.
-    e. Delete a job application.
-    f. Delete his/her account.
-    g. Search Job (with keywords also..)
-    h. Update
-    i. Profile
+    - Signup
+    - Login/Logout
+    - List all applied jobs and their status.
+    - Apply to one or more jobs.
+    - Delete a job application.
+    - Delete his/her account.
+    - Search Job (with keywords also..)
+    - Update
+    - Profile
 
-
+4. Additional Features:
+    - Recruiters get a notification/ email when an applicant applies for a job.
+    - Applicant gets notification/ email on recruiter’s action accept/reject.
 
 ### Usability of this Project
 
@@ -178,6 +180,8 @@ Input
         "currentCompany":   "",
         "token": "" }
 }
+```
+
 - '/api/recruiter/candidates'-> recruiter can see candidates who applied to his/her job.
 ```json
 {
@@ -211,7 +215,7 @@ Input
 }
 ```
 
-- '/api/recruiter/accept'-> recruiter can sign up.
+- '/api/recruiter/acceptAndClose'-> recruiter can reject candidate's application and make job as closed.
 ```json
 {
 {
@@ -221,6 +225,181 @@ Input
 }
 }
 ```
+
+- '/api/recruiter/getCandidate'-> recruiter can see a candidate.
+```json
+{
+{
+    "id":"",
+    "email":"", (candidate mail)
+    "token:""
+}
+}
+```
+
+- '/api/recruiter/deleteAccount'-> recruiter can delete his/her account.
+```json
+{
+{
+    "email":"",
+    "password":"",
+    "token:""
+}
+}
+```
+
+- '/api/recruiter/postedjobs'-> recruiter can see a his/her posted jobs.
+```json
+{
+{
+    "token:""
+}
+}
+```
+
+- '/api/recruiter/signout'-> recruiter can signout.
+```json
+{
+{
+    "email":"",
+    "token:""
+}
+}
+```
+
+
+
+- '/api/user/signup'-> user can sign up.
+Input
+```json
+{
+  {
+    "email":"",
+    "firstname":"",
+    "lastname":"",
+    "password":"",
+    "phone":
+}
+}
+
+
+```
+
+- '/api/user/login'-> user can log up and takes a token for his/her session.
+Input
+```json
+{
+{
+    "email":"",
+    "password":""
+}
+}
+```
+
+- '/api/user/applyjob'-> recruiter can post a job.
+```json
+{
+{
+        "jobAppliedId": "",
+        "jobAppliedBy": "",
+        "postedBy_mail":"",
+        "token":        ""
+}
+}
+```
+
+- '/api/user/profile'-> user can see his profile.
+```json
+{
+{
+    "email":"",
+    "token":""
+}
+}
+```
+
+- '/api/user/update'-> user can update his details.
+```json
+{
+  {     "email": "",
+        "firstname":        "", 
+        "lastname":         "", 
+        "phone":            , 
+        "gender":           "", 
+        "address":          "", 
+        "currentlyhiring":  "", 
+        "totalJobsPosted":  ,
+        "currentJob":       "", 
+        "currentCompany":   "",
+        "token": "" }
+}
+```
+
+- '/api/user/searchjobs'-> user can search jobs.
+```json
+{
+{
+    "keyword":"",
+    "token":"",
+    "skills":["",""]
+}
+}
+```
+
+- '/api/user/getjob'-> user can see a job opening.
+```json
+{
+{
+    "id":"",(job ID)
+    "token:""
+}
+}
+```
+
+- '/api/user/jobapplications'-> user can see list of jobs where he/she applied.
+```json
+{
+{
+    "email":"",
+    "token:""
+}
+}
+```
+
+- '/api/user/deleteApplication'-> user can delete his application.
+```json
+{
+{
+    "email":"",
+    "id":"",
+    "token:""
+}
+}
+```
+
+- '/api/user/deleteAccount'-> user can delete his/her account.
+```json
+{
+{
+    "email":"",
+    "password":"",
+    "token:""
+}
+}
+```
+
+- '/api/user/checkApplication'-> user can check the status of the applicaiton.
+```json
+{
+{
+    "id":"", (jobid)
+    "token:""
+}
+}
+```
+
+
+
 
 
   Specifies  which code file acts as the controller for this endpoint.
