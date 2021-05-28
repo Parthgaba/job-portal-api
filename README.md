@@ -270,20 +270,20 @@ Npm scripts basically allow us to call (and chain) terminal commands via npm.
 ### Usability of this Project
 
 1. Home Page
-    a. All the ‘OPEN’ jobs.
+    - All the ‘OPEN’ jobs.
 
 2. Recruiter side:
-    a. Signup
-    b. Login
-    c. Post a job
-    d. List candidates who applied to a job.
-    e. Reject or accept a candidate.
-    f. Accepting a candidate at the end of vacancies available should change the status of job as ‘CLOSED’.
-    g. Profile
-    h. update
-    i. delete account
-    j. see a candidate
-    k. See posted Jobs
+    - Signup
+    - Login
+    - Post a job
+    - List candidates who applied to a job.
+    - Reject or accept a candidate.
+    - Accepting a candidate at the end of vacancies available should change the status of job as ‘CLOSED’.
+    - Profile
+    - update
+    - delete account
+    - see a candidate
+    - See posted Jobs
     
 3. Candidate side:
     a. Signup
@@ -454,5 +454,4 @@ Restart it. :)
 
 ## IF server fails
 Restart it. :)
-
 
