@@ -1,0 +1,44 @@
+Employee->
+Name
+Address
+Phone
+Email
+Website
+Status
+Skills
+Education
+Experience
+Achievements
+Job Profiles
+Featured
+Profile Picture
+Video Profile
+Currently Employement Status
+
+Employer->
+Name
+Address
+Phone
+Email
+Website
+Status
+Currently Employement Status
+Currently Hiring Status
+Hiring for which company and post
+    COMPANY
+    JD
+    SALARY
+    DESCRIPTION
+
+Jobs->
+//TODO
+
+
+REST API - GET, POST, PATCH, DELETE
+ExpressJS
+MongoDB
+
+GET http://localhost:9000/jobs
+GET http://localhost:9000/jobs/<id>
+POST http://localhost:9000/jobs
+PATCH http://localhost:9000/<id>
