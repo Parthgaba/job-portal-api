@@ -296,7 +296,7 @@ Input
 }
 ```
 
-- '/api/user/applyjob'-> recruiter can post a job.
+- '/api/user/applyjob'-> user can apply for a job.
 ```json
 {
 {
